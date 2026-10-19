@@ -1,0 +1,4 @@
+[workspace]
+members = ["exercises/practice/*", "exercises/concept/*"]
+default-members = ["exercises/practice/hello-world"]
+resolver = "3"
