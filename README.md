@@ -6,9 +6,19 @@
 
 ## 开始刷题
 
-1. 打开题目目录下的 `.docs/instructions.md`，也可以查看同目录下其他说明。
-2. 修改对应题目的 `src/lib.rs`（部分题目有其他源码文件）。
-3. 在项目根目录运行：
+推荐使用顺序练习工具（按官方 practice 题目、难度从低到高）：
+
+```sh
+cargo ex start      # 从第一道未通过的题开始，展示说明/教程/提示并跑测试
+cargo ex watch      # 监听当前题源码变化，保存后自动重测；通过后进入下一题
+cargo ex concept    # 单独练习 concept 题（同样展示教程和提示）
+cargo ex list       # 列出题目顺序与难度
+cargo ex show       # 只展示当前题的说明文档
+```
+
+流程：修改当前题的 `src/lib.rs` → 测试通过 → 自动进入下一题。进度会显示 `已完成/总数`。
+
+也可以手动测单题：
 
 ```sh
 cargo test -p hello_world
