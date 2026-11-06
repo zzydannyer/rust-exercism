@@ -9,3 +9,6 @@
 - The `Debug` trait is there because you'll likely need it.
 
 - You'll need to extend the list of `derive`d traits on your colors enum.
+
+中文对照：
+使用 `enum-iterator` crate 遍历枚举，使用 `int-enum` crate 将整数转换为枚举。`Debug` trait 也会派上用场，并且需要扩展颜色枚举派生的 trait 列表。

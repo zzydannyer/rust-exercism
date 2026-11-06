@@ -102,3 +102,6 @@ mod my_cool_module {
 ```
 
 Doc comments can be of arbitrary length and contain markdown, which is rendered into the generated documentation.
+
+中文对照：
+在 Rust 中，为名称赋值称为绑定。绑定默认不可变，除非使用 `mut`。绑定通常用 `let` 定义，类型多数情况下可由类型推断。函数会自动返回最后一个表达式的结果。条目可以在定义前使用，但绑定只能在定义后使用。花括号定义作用域，模块使用 `mod` 组织相关功能。Rust 支持普通注释和会出现在 `cargo doc` 文档中的文档注释。

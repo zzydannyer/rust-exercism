@@ -73,3 +73,6 @@ fn main() { let _my_tuple_struct = tuple::TupleStruct(123, -321); }
 mod tuple { pub struct TupleStruct(pub u8, pub i32); }
 fn main() { let _my_tuple_struct = tuple::TupleStruct(123, -321); }
 ```
+
+中文对照：
+元组是把固定数量、任意类型的数据组合在一起的轻量方式。元组没有专门名称；为数据结构命名后就是 `struct`。元组字段没有名称，可以通过解构或位置访问。本练习还会介绍元组结构体和字段可见性。

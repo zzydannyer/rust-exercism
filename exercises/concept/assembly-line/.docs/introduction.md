@@ -39,3 +39,6 @@ Rust doesn't do any implicit type conversion.
 This means that if you need to turn one numeric type into another, you have to do so explicitly.
 When converting from a larger type to a smaller one (for instance `u64` to `u32`) you could lose data.
 Converting from a floating point to an integer **will** lose everything behind the decimal point, effectively rounding down.
+
+中文对照：
+Rust 中有整数和浮点数两类数字。整数可以有符号或无符号，浮点数可以包含小数。数字类型名称由类别和位数组成，例如 `u8`、`i32` 和 `f64`。Rust 不会隐式转换数字类型，需要显式转换，且缩小类型可能丢失数据。

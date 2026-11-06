@@ -1,8 +1,14 @@
 # Instructions
 
+# 指示
+
 Recite the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.
 
+背诵那首受人喜爱的经典歌曲、野外旅行中最喜欢的歌曲的歌词：《墙上的 99 瓶啤酒》。
+
 Note that not all verses are identical.
+
+请注意，并非所有经文都是相同的。
 
 ```text
 99 bottles of beer on the wall, 99 bottles of beer.

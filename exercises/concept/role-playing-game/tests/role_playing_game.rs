@@ -88,7 +88,9 @@ fn cast_spell_with_insufficient_mana() {
     };
 
     // we want to clone so we can compare before-and-after effects of casting the spell,
+    // 我们需要克隆对象，以便比较施放法术前后的效果，
     // but we don't want to introduce that concept to the student yet, so we have to do it manually
+    // 但暂时不想向学生引入这个概念，因此必须手动完成。
     let clone = Player { ..no_mana_wizard };
 
     assert_eq!(no_mana_wizard.cast_spell(3), 0);

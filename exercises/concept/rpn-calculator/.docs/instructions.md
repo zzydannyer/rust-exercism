@@ -2,6 +2,8 @@
 
 ## 1. Overview
 
+## 1. 概览
+
 [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (RPN) is a way of writing mathematical expressions.
 Unlike in traditional infix notation, RPN operators *follow* their operands.
 For example, instead of writing:
@@ -32,7 +34,11 @@ can be written as
 
 In both cases, the expression evaluates to 6.
 
+在这两种情况下，表达式的计算结果都是 6。
+
 ## 2. Example
+
+## 2. 示例
 
 Let's manually evaluate that complex expression.
 As we learned in the introduction, evaluation of RPN requires a stack.
@@ -86,11 +92,15 @@ we can say the expression evaluated to 6.
 
 ## 3. Goal
 
+## 3. 目标
+
 Your goal is to write a calculator to evaluate a list of inputs ordered by Reverse Polish notation and return the final element on the stack.
 
 If there is not exactly one element in the stack at the end, return `None`.
 
 If there is an operator with too few operands (such as the input `2 +`), return `None`.
+
+如果某个运算符的操作数不足（例如输入 `2 +`），则返回 `None`。
 
 You are given the following enum and stubbed function as a starting point.
 

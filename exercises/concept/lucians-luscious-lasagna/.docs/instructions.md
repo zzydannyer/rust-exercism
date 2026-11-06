@@ -39,3 +39,6 @@ Define the `elapsed_time_in_minutes` function that takes two parameters: the fir
 elapsed_time_in_minutes(3, 20)
 // Returns: 26
 ```
+
+中文对照：
+本练习将帮助你根据食谱烹饪千层面。需要完成四项任务：定义烤箱所需时间、计算剩余烘烤时间、计算准备时间，以及计算总耗时。烤箱所需时间为 40 分钟，每层准备需要 2 分钟。

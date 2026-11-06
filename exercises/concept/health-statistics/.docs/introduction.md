@@ -38,3 +38,6 @@ impl Item {
 ```
 
 With that brief introduction to the syntax of structs out of the way, go ahead and take a look at the [instructions](instructions.md) for this exercise!
+
+中文对照：
+将一组项目作为整体处理通常很有用。在 Rust 中，这种组合称为结构体，每个项目是结构体字段。`&mut self` 允许修改字段，`&self` 不允许修改。结构体有具名字段、元组结构体和单元结构体三种形式，本练习关注具名字段结构体。

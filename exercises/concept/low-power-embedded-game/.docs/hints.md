@@ -21,3 +21,6 @@
 - Don't worry about method syntax; just replacing the `todo` portion within the `impl Position` block will do the right thing.
 - Consider that some values within a `Position` may be negative, but a distance is never negative.
 - Calculating the absolute value is [built-in](https://doc.rust-lang.org/std/primitive.i16.html#method.abs)
+
+中文对照：
+请参考 Rust 关于元组、解构和 `i16` 绝对值方法的文档。除法和余数可直接实现；偶数迭代器可链式调用建议的方法；距离不能为负数。

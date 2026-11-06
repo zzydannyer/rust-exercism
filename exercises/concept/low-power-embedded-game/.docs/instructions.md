@@ -72,3 +72,6 @@ Example:
 ```rust
 assert_eq!(Position(3, 4).manhattan(), 7);
 ```
+
+中文对照：
+本练习需要实现几个便利函数：计算除法的商和余数、从迭代器中选择偶数位置的元素，以及计算位置到原点的曼哈顿距离。迭代器提供 `enumerate`、`filter` 和 `map` 等方法；`Position` 是一个二元组结构体。

@@ -1,8 +1,14 @@
 # Instructions
 
+# 指示
+
 Recite the lyrics to that popular children's repetitive song: Ten Green Bottles.
 
+背诵那首流行的儿童重复歌曲的歌词：十个绿色瓶子。
+
 Note that not all verses are identical.
+
+请注意，并非所有经文都是相同的。
 
 ```text
 Ten green bottles hanging on the wall,

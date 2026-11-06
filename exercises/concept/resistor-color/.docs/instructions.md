@@ -39,3 +39,6 @@ You can look into the default implementation of the Debug trait for Enums to com
 Mnemonics map the colors to the numbers, that, when stored as an array, happen to map to their index in the array: Better Be Right Or Your Great Big Values Go Wrong.
 
 More information on the color encoding of resistors can be found in the [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
+
+中文对照：
+电阻使用颜色编码色环表示阻值，因为电阻很小，直接印刷数值难以阅读。前两个色环中，每种颜色对应一个数字。本练习要求查找颜色对应的数值、把数值转换为颜色字符串，并列出所有色环颜色；请查阅题目中提供的两个 crate 的文档。

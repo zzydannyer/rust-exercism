@@ -1,7 +1,9 @@
 mod divmod {
     //! tests of divmod
+    //! divmod 的测试
     //!
     //! note that we're only testing positive quantities; no need to get into the mod/rem distinction
+    //! 注意我们只测试正数，因此无需讨论 mod/rem 的区别
 
     use low_power_embedded_game::divmod;
 

@@ -29,3 +29,6 @@ fn foo() -> i32 {
 - The `set_age()` and `set_weight()` methods are setters, responsible for updating the corresponding field on a struct instance with the input argument.
 
 - As the signatures of these methods specify, the setter methods shouldn't return anything.
+
+中文对照：
+`new` 应使用传入参数创建 `User`。`name`、`age` 和 `weight` 是 getter，应返回对应字段；字符串字段可以返回 `&str`。`set_age` 和 `set_weight` 是 setter，负责更新字段且不返回值。

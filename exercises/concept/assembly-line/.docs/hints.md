@@ -10,3 +10,6 @@
 ## 2. Calculate the number of working items produced per minute
 
 - Just like multiplication, division is only possible between numbers of the same type. By writing a number with a decimal point (e.g. `1.0` instead of `1`) we can write inline constants with a floating point type.
+
+中文对照：
+可以使用条件语句或模式匹配确定成功率。Rust 只允许相同类型的值相乘，因此需要类型转换；计算每分钟产量时也要保证除法两侧类型一致。

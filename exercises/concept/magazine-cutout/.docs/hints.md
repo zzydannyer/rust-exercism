@@ -15,3 +15,6 @@
 ```rust
 *counter.entry(key).or_default() += 1;
 ```
+
+中文对照：
+通过 `entry` 获取条目后，可以解引用并原地修改。`or_insert` 会在条目为空时插入给定值并返回可变引用；`or_default` 会插入默认值并返回可变引用。

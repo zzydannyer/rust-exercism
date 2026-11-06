@@ -62,3 +62,6 @@ The `cast_spell` method takes a mutable reference to the Player as well as a `ma
   ```
 
 Have fun!
+
+中文对照：
+本练习实现角色扮演游戏中的复活和施法机制。复活时，只有生命值为 0 的玩家才会获得 100 点生命值；等级达到 10 时还会获得 100 点法力值。施法时，没有法力池的玩家会消耗生命值；法力不足的玩家状态不变；法力充足时扣除法力并造成法力消耗两倍的伤害。

@@ -31,3 +31,6 @@ assembly_line::working_items_per_minute(6)
 ```
 
 Note that the value returned is an `u32`.
+
+中文对照：
+本练习分析汽车工厂装配线的产量。速度范围为 `0` 到 `10`；速度越高，每小时产量越高，但故障率也会上升。需要计算考虑成功率后的每小时产量，以及每分钟生产的合格汽车数量。

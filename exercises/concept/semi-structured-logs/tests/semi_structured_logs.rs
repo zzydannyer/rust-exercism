@@ -46,6 +46,7 @@ fn log_emits_error() {
 #[ignore]
 fn add_a_variant() {
     // this test won't even compile until the enum is complete, which is why it is feature-gated.
+    // 在枚举完整之前这个测试甚至无法编译，因此它受功能门控。
     assert_eq!(
         log(LogLevel::Debug, "reached line 123"),
         "[DEBUG]: reached line 123",

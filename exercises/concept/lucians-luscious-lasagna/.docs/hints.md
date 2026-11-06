@@ -29,3 +29,6 @@
 [functions]: https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
 [return-values]: https://doc.rust-lang.org/book/ch03-03-how-functions-work.html#functions-with-return-values
 [operators]: https://doc.rust-lang.org/book/appendix-02-operators.html
+
+中文对照：
+整数文字由连续数字组成。按提示定义无参数、单参数和双参数函数；可以使用之前定义的条目、隐式返回，以及减法、乘法和加法运算符。

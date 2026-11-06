@@ -79,3 +79,6 @@ Besides `match`, Rust has other tools available for checking and accessing value
 Additionally, consider this a demonstration of why Rust uses `Option` instead of a null-reference.
 The point is that **you _must_ check** whether or not the `Option` variable is `Some` (in which case you can go ahead and extract and use the value contained within), or `None`.
 Anything else, and your program will not compile; the compiler is keeping you safe from `null`.
+
+中文对照：
+许多语言使用 `null` 或 `nil` 表示变量没有值，但误用空值容易导致错误和崩溃。Rust 不使用空引用，而是使用 `Option` 安全地表示可能没有值的情况。`Option` 有 `None` 和 `Some(T)` 两个变体；使用其中的值前必须先确认它是 `Some`。

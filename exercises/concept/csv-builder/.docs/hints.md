@@ -9,3 +9,6 @@
 ## 2. Add individual fields to the record
 
 - The [`push_str`](https://doc.rust-lang.org/std/string/struct.String.html#method.push_str) comes in quite handy for adding string slices to a `String`.
+
+中文对照：
+请参考 Rust Book 关于字符串切片的内容。标准库的 `String` 文档包含创建字符串的示例；`push_str` 适合把字符串切片追加到 `String`。

@@ -45,3 +45,6 @@ let record = builder.build();
 // Note that from now on we cannot use `builder`
 assert_eq!(&record, r#"ant,"ba""t",cat"#);
 ```
+
+中文对照：
+本练习根据 RFC 4180 从用户输入生成 CSV 记录。需要创建记录构建器、添加字段，并使用基本转义序列化记录。包含换行、双引号或逗号的字段必须用双引号包围，内部双引号必须再增加一个双引号进行转义。

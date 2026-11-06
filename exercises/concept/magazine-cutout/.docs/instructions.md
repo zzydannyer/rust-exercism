@@ -38,3 +38,6 @@ assert!(can_construct_note(&magazine, &note));
 ```
 
 The function returns `true` since the magazine contains all the words that the note requires.
+
+中文对照：
+本练习使用 `HashMap` 和 entry API 解决一个算法问题：给定杂志文章中的单词和便笺中的单词，判断能否从杂志中剪下这些单词拼成便笺。每个单词的出现次数必须足够，并且大小写敏感。
