@@ -34,7 +34,7 @@
 {% set e_second = time.2 | int %}
 
 #[test]
-#[ignore]
+//#[ignore]
 fn {{ test.description | make_ident }}() {
     let start = datetime({{ year }},{{ month }},{{ day }},{{ hour }},{{ minute }},{{ second }});
     let actual = gigasecond::after(start);

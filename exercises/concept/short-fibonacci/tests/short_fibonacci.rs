@@ -6,7 +6,7 @@ fn empty() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn buffer() {
     for n in 0..10 {
         let zeroized = create_buffer(n);
@@ -16,7 +16,7 @@ fn buffer() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn first_five_elements() {
     let fibb = fibonacci();
     assert_eq!(fibb.len(), 5);

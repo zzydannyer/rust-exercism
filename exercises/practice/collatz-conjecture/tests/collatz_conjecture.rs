@@ -8,7 +8,7 @@ fn zero_steps_for_one() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn divide_if_even() {
     let output = collatz(16);
     let expected = Some(4);
@@ -16,7 +16,7 @@ fn divide_if_even() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn even_and_odd_steps() {
     let output = collatz(12);
     let expected = Some(9);
@@ -24,7 +24,7 @@ fn even_and_odd_steps() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn large_number_of_even_and_odd_steps() {
     let output = collatz(1_000_000);
     let expected = Some(152);
@@ -32,7 +32,7 @@ fn large_number_of_even_and_odd_steps() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn zero_is_an_error() {
     let output = collatz(0);
     let expected = None;

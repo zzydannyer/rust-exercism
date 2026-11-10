@@ -14,9 +14,9 @@ Hint: grapheme clusters
 尝试编写一个函数来正确反转该字符串。
 提示：字素簇
 
-To get the bonus test to run, remove the ignore flag (`#[ignore]`) from the last test, and execute the tests with:
+To get the bonus test to run, remove the ignore flag (`//#[ignore]`) from the last test, and execute the tests with:
 
-要运行额外测试，请从上次测试中删除忽略标志 (`#[ignore]`)，然后使用以下命令执行测试：
+要运行额外测试，请从上次测试中删除忽略标志 (`//#[ignore]`)，然后使用以下命令执行测试：
 
 ```bash
 cargo test --features grapheme

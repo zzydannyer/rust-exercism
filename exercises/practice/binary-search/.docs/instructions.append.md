@@ -36,10 +36,10 @@ are some additional things you could try.
 - 此外，此查找功能不仅可以在切片上工作，还可以在
   同时也在 Vec 或数组上。
 
-To run the bonus tests, remove the `#[ignore]` flag and execute the tests with
+To run the bonus tests, remove the `//#[ignore]` flag and execute the tests with
 the `generic` feature, like this:
 
-要运行奖励测试，请删除 `#[ignore]` 标志并使用以下命令执行测试
+要运行奖励测试，请删除 `//#[ignore]` 标志并使用以下命令执行测试
 `generic` 功能，如下所示：
 
 ```bash

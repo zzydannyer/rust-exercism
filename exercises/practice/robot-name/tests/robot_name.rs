@@ -27,7 +27,7 @@ fn name_should_match_expected_pattern() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn robot_name_depends_on_rng() {
     let mut rng = deterministic_rng();
     let robot_1 = RobotFactory::new().new_robot(&mut rng);
@@ -36,7 +36,7 @@ fn robot_name_depends_on_rng() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn robot_name_only_depends_on_rng() {
     let robot_1 = RobotFactory::new().new_robot(&mut deterministic_rng());
     let robot_2 = RobotFactory::new().new_robot(&mut deterministic_rng());
@@ -44,7 +44,7 @@ fn robot_name_only_depends_on_rng() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn factory_prevents_name_collisions() {
     let mut factory = RobotFactory::new();
     let robot_1 = factory.new_robot(&mut deterministic_rng());
@@ -53,7 +53,7 @@ fn factory_prevents_name_collisions() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn new_name_should_match_expected_pattern() {
     let mut rng = deterministic_rng();
     let mut factory = RobotFactory::new();
@@ -64,7 +64,7 @@ fn new_name_should_match_expected_pattern() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn new_name_is_different_from_old_name() {
     let mut rng = deterministic_rng();
     let mut factory = RobotFactory::new();
@@ -76,7 +76,7 @@ fn new_name_is_different_from_old_name() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn factory_prevents_name_collision_despite_reset() {
     let mut factory = RobotFactory::new();
 
@@ -92,7 +92,7 @@ fn factory_prevents_name_collision_despite_reset() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn old_name_becomes_available_after_reset() {
     let mut rng = deterministic_rng();
     let mut factory = RobotFactory::new();

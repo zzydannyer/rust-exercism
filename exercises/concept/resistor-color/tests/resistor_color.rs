@@ -6,37 +6,37 @@ fn black() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn orange() {
     assert_eq!(color_to_value(ResistorColor::Orange), 3);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn white() {
     assert_eq!(color_to_value(ResistorColor::White), 9);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn two() {
     assert_eq!(value_to_color_string(2), String::from("Red"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn six() {
     assert_eq!(value_to_color_string(6), String::from("Blue"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn eight() {
     assert_eq!(value_to_color_string(8), String::from("Grey"));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn eleven_out_of_range() {
     assert_eq!(
         value_to_color_string(11),
@@ -45,7 +45,7 @@ fn eleven_out_of_range() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn all_colors() {
     use ResistorColor::*;
     assert_eq!(

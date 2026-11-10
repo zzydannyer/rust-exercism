@@ -12,7 +12,7 @@ fn find_the_smallest_palindrome_from_single_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn find_the_largest_palindrome_from_single_digit_factors() {
     let output = palindrome_products(1, 9);
     assert!(output.is_some());
@@ -23,7 +23,7 @@ fn find_the_largest_palindrome_from_single_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn find_the_smallest_palindrome_from_double_digit_factors() {
     let output = palindrome_products(10, 99);
     assert!(output.is_some());
@@ -34,7 +34,7 @@ fn find_the_smallest_palindrome_from_double_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn find_the_largest_palindrome_from_double_digit_factors() {
     let output = palindrome_products(10, 99);
     assert!(output.is_some());
@@ -45,7 +45,7 @@ fn find_the_largest_palindrome_from_double_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn find_the_smallest_palindrome_from_triple_digit_factors() {
     let output = palindrome_products(100, 999);
     assert!(output.is_some());
@@ -56,7 +56,7 @@ fn find_the_smallest_palindrome_from_triple_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn find_the_largest_palindrome_from_triple_digit_factors() {
     let output = palindrome_products(100, 999);
     assert!(output.is_some());
@@ -67,7 +67,7 @@ fn find_the_largest_palindrome_from_triple_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn find_the_smallest_palindrome_from_four_digit_factors() {
     let output = palindrome_products(1000, 9999);
     assert!(output.is_some());
@@ -78,7 +78,7 @@ fn find_the_smallest_palindrome_from_four_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn find_the_largest_palindrome_from_four_digit_factors() {
     let output = palindrome_products(1000, 9999);
     assert!(output.is_some());
@@ -89,35 +89,35 @@ fn find_the_largest_palindrome_from_four_digit_factors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn empty_result_for_smallest_if_no_palindrome_in_the_range() {
     let output = palindrome_products(1002, 1003);
     assert!(output.is_none());
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn empty_result_for_largest_if_no_palindrome_in_the_range() {
     let output = palindrome_products(15, 15);
     assert!(output.is_none());
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn error_result_for_smallest_if_min_is_more_than_max() {
     let output = palindrome_products(10000, 1);
     assert!(output.is_none());
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn error_result_for_largest_if_min_is_more_than_max() {
     let output = palindrome_products(2, 1);
     assert!(output.is_none());
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn smallest_product_does_not_use_the_smallest_factor() {
     let output = palindrome_products(3215, 4000);
     assert!(output.is_some());

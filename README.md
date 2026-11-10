@@ -31,7 +31,7 @@ cargo test -p reverse_string --features grapheme -- --include-ignored
 
 根目录直接执行 `cargo test` 默认只测 hello-world。也可以进入某题目录运行 `cargo test`。
 
-初始代码故意未实现，测试失败甚至编译失败都可能是正常的（例如 macros）。不建议一开始就 `cargo test --workspace`。文档测试中的 `compile_fail,ignore` 需要按照题目说明移除 `,ignore` 来启用；普通 `#[ignore]` 测试可以用上面的参数运行。仅使用 `--all-targets` 不包含文档测试。
+初始代码故意未实现，测试失败甚至编译失败都可能是正常的（例如 macros）。不建议一开始就 `cargo test --workspace`。文档测试中的 `compile_fail,ignore` 需要按照题目说明移除 `,ignore` 来启用；普通 `//#[ignore]` 测试可以用上面的参数运行。仅使用 `--all-targets` 不包含文档测试。
 
 每题有独立 `Cargo.toml`，共享根目录的 `Cargo.lock` 和 `target/`。需要支持 edition 2024 的 Rust 工具链（Rust 1.85 或更高版本）。多数练习是库，没有 main.rs，使用 `cargo test` 而不是 `cargo run`。
 

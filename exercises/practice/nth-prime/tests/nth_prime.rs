@@ -8,7 +8,7 @@ fn first_prime() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn second_prime() {
     let output = nth(1);
     let expected = 3;
@@ -16,7 +16,7 @@ fn second_prime() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn sixth_prime() {
     let output = nth(5);
     let expected = 13;
@@ -24,7 +24,7 @@ fn sixth_prime() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn big_prime() {
     let output = nth(10_000);
     let expected = 104_743;

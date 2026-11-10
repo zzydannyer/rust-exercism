@@ -10,7 +10,7 @@ fn no_items() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn one_item_too_heavy() {
     let max_weight = 10;
     let items = [Item {
@@ -23,7 +23,7 @@ fn one_item_too_heavy() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn five_items_cannot_be_greedy_by_weight() {
     let max_weight = 10;
     let items = [
@@ -54,7 +54,7 @@ fn five_items_cannot_be_greedy_by_weight() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn five_items_cannot_be_greedy_by_value() {
     let max_weight = 10;
     let items = [
@@ -85,7 +85,7 @@ fn five_items_cannot_be_greedy_by_value() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn example_knapsack() {
     let max_weight = 10;
     let items = [
@@ -112,7 +112,7 @@ fn example_knapsack() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_8_items() {
     let max_weight = 104;
     let items = [
@@ -155,7 +155,7 @@ fn test_8_items() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_15_items() {
     let max_weight = 750;
     let items = [

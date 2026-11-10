@@ -1,14 +1,4 @@
-#[cfg(feature = "grapheme")]
-use unicode_segmentation::UnicodeSegmentation;
-
 pub fn reverse(input: &str) -> String {
-    // todo!("Write a function to reverse {input}");
-    #[cfg(feature = "grapheme")]
-    {
-        input.graphemes(true).rev().collect()
-    }
-    #[cfg(not(feature = "grapheme"))]
-    {
-        input.chars().rev().collect()
-    }
+    // chars() 按 Unicode 标量值反转；组合字符（字素簇）不在本题范围内
+    input.chars().rev().collect()
 }

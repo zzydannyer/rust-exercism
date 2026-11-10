@@ -8,31 +8,31 @@ fn count_empty() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn count_invalid_nucleotide() {
     assert_eq!(count('X', "A"), Err('X'));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn count_invalid_dna() {
     assert_eq!(count('A', "AX"), Err('X'));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn count_repetitive_cytosine() {
     assert_eq!(count('C', "CCCCC"), Ok(5));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn count_only_thymine() {
     assert_eq!(count('T', "GGGGGTAACCCGG"), Ok(1));
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn empty_strand() {
     let output = nucleotide_counts("");
     let mut expected = HashMap::new();
@@ -44,7 +44,7 @@ fn empty_strand() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn can_count_one_nucleotide_in_single_character_input() {
     let output = nucleotide_counts("G");
     let mut expected = HashMap::new();
@@ -56,7 +56,7 @@ fn can_count_one_nucleotide_in_single_character_input() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn strand_with_repeated_nucleotide() {
     let output = nucleotide_counts("GGGGGGG");
     let mut expected = HashMap::new();
@@ -68,7 +68,7 @@ fn strand_with_repeated_nucleotide() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn strand_with_multiple_nucleotides() {
     let output =
         nucleotide_counts("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC");
@@ -81,7 +81,7 @@ fn strand_with_multiple_nucleotides() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn strand_with_invalid_nucleotides() {
     let output = nucleotide_counts("AGXXACT");
     assert!(output.is_err());

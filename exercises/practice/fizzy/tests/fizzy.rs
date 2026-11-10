@@ -11,7 +11,7 @@ fn simple() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn u8() {
     let actual = fizz_buzz::<u8>().apply(1_u8..=16).collect::<Vec<_>>();
     let expected = [
@@ -22,7 +22,7 @@ fn u8() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn u64() {
     let actual = fizz_buzz::<u64>().apply(1_u64..=16).collect::<Vec<_>>();
     let expected = [
@@ -33,7 +33,7 @@ fn u64() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn nonsequential() {
     let collatz_12 = &[12, 6, 3, 10, 5, 16, 8, 4, 2, 1];
     let actual = fizz_buzz::<i32>()
@@ -46,7 +46,7 @@ fn nonsequential() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn custom() {
     let expected = vec![
         "1", "2", "Fizz", "4", "Buzz", "Fizz", "Bam", "8", "Fizz", "Buzz", "11", "Fizz", "13",
@@ -61,7 +61,7 @@ fn custom() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn f64() {
     // a tiny bit more complicated becuase range isn't natively implemented on floats
     let actual = fizz_buzz::<f64>()
@@ -76,7 +76,7 @@ fn f64() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn minimal_generic_bounds() {
     use std::fmt;
     use std::ops::{Add, Rem};

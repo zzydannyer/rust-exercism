@@ -11,21 +11,21 @@ fn name() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn age() {
     let user = User::new(NAME.into(), AGE, WEIGHT);
     assert_eq!(user.age(), AGE);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn weight() {
     let user = User::new(NAME.into(), AGE, WEIGHT);
     assert!((user.weight() - WEIGHT).abs() < f32::EPSILON);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn set_age() {
     let new_age: u32 = 90;
     let mut user = User::new(NAME.into(), AGE, WEIGHT);
@@ -34,7 +34,7 @@ fn set_age() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn set_weight() {
     let new_weight: f32 = 129.4;
     let mut user = User::new(NAME.into(), AGE, WEIGHT);

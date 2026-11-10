@@ -16,7 +16,7 @@ mod read_string {
     static INPUT: &[u8] = b"Twas brillig, and the slithy toves/Did gyre and gimble in the wabe:/All mimsy were the borogoves,/And the mome raths outgrabe.";
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_passthrough() {
         let data = INPUT;
         let size = data.len();
@@ -36,7 +36,7 @@ mod read_string {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_chunks() {
         let data = INPUT;
         let size = data.len();
@@ -56,7 +56,7 @@ mod read_string {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_buffered_chunks() {
         let data = INPUT;
         let size = data.len();
@@ -87,7 +87,7 @@ mod write_string {
     static INPUT: &[u8] = b"Beware the Jabberwock, my son!/The jaws that bite, the claws that catch!/Beware the Jubjub bird, and shun/The frumious Bandersnatch!";
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn write_passthrough() {
         let data = INPUT;
         let size = data.len();
@@ -101,7 +101,7 @@ mod write_string {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn sink_oneshot() {
         let data = INPUT;
         let size = data.len();
@@ -114,7 +114,7 @@ mod write_string {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn sink_windowed() {
         let data = INPUT;
         let size = data.len();
@@ -132,7 +132,7 @@ mod write_string {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn sink_buffered_windowed() {
         let data = INPUT;
         let size = data.len();
@@ -179,7 +179,7 @@ mod read_byte_literal {
     static INPUT: &[u8] = &[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_passthrough() {
         let data = INPUT;
         let size = data.len();
@@ -199,7 +199,7 @@ mod read_byte_literal {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_chunks() {
         let data = INPUT;
         let size = data.len();
@@ -219,7 +219,7 @@ mod read_byte_literal {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_buffered_chunks() {
         let data = INPUT;
         let size = data.len();
@@ -252,7 +252,7 @@ mod write_byte_literal {
     ];
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn write_passthrough() {
         let data = INPUT;
         let size = data.len();
@@ -266,7 +266,7 @@ mod write_byte_literal {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn sink_oneshot() {
         let data = INPUT;
         let size = data.len();
@@ -279,7 +279,7 @@ mod write_byte_literal {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn sink_windowed() {
         let data = INPUT;
         let size = data.len();
@@ -297,7 +297,7 @@ mod write_byte_literal {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn sink_buffered_windowed() {
         let data = INPUT;
         let size = data.len();
@@ -342,7 +342,7 @@ mod read_file {
     const CHUNK_SIZE: usize = 2;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_passthrough() {
         let data = std::fs::File::open("Cargo.toml").expect("Cargo.toml must be present");
         let size = data.metadata().expect("metadata must be present").len() as usize;
@@ -362,7 +362,7 @@ mod read_file {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_chunks() {
         let data = std::fs::File::open("Cargo.toml").expect("Cargo.toml must be present");
         let size = data.metadata().expect("metadata must be present").len() as usize;
@@ -382,7 +382,7 @@ mod read_file {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn read_buffered_chunks() {
         let data = std::fs::File::open("Cargo.toml").expect("Cargo.toml must be present");
         let size = data.metadata().expect("metadata must be present").len() as usize;
@@ -405,7 +405,7 @@ mod read_file {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn read_stats_by_ref_returns_wrapped_reader() {
     use paasio::ReadStats;
 
@@ -446,7 +446,7 @@ impl Write for WriteFails {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn read_propagates_errors() {
     use paasio::ReadStats;
 
@@ -463,7 +463,7 @@ fn read_propagates_errors() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn write_propagates_errors() {
     use paasio::WriteStats;
 

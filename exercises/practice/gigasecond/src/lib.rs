@@ -1,6 +1,6 @@
-use time::PlainDateTime as DateTime;
+use time::{Duration, PlainDateTime as DateTime};
 
-// Returns a DateTime one billion seconds after start.
+// 返回 start 过 10^9 秒（1 gigasecond）之后的时间
 pub fn after(start: DateTime) -> DateTime {
-    todo!("What time is a gigasecond later than {start}");
+    start + Duration::seconds(1_000_000_000)
 }

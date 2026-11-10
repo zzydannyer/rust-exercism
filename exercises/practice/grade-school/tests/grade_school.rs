@@ -7,7 +7,7 @@ fn grade_is_empty_if_no_students_in_the_roster() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn grade_is_empty_if_no_students_in_that_grade() {
     let mut s = School::new();
     s.add(2, "Peter");
@@ -18,7 +18,7 @@ fn grade_is_empty_if_no_students_in_that_grade() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn student_not_added_to_same_grade_more_than_once() {
     let mut s = School::new();
     s.add(2, "Blair");
@@ -29,7 +29,7 @@ fn student_not_added_to_same_grade_more_than_once() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn student_not_added_to_multiple_grades() {
     let mut s = School::new();
     s.add(2, "Blair");
@@ -40,7 +40,7 @@ fn student_not_added_to_multiple_grades() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn student_not_added_to_other_grade_for_multiple_grades() {
     let mut s = School::new();
     s.add(2, "Blair");
@@ -51,7 +51,7 @@ fn student_not_added_to_other_grade_for_multiple_grades() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn students_are_sorted_by_name_in_a_grade() {
     let mut s = School::new();
     s.add(5, "Franklin");
@@ -61,14 +61,14 @@ fn students_are_sorted_by_name_in_a_grade() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn grades_for_empty_school() {
     let s = School::new();
     assert_eq!(s.grades(), vec![]);
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn grades_for_one_student() {
     let mut s = School::new();
     s.add(2, "Aimee");
@@ -76,7 +76,7 @@ fn grades_for_one_student() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn grades_for_several_students_are_sorted() {
     let mut s = School::new();
     s.add(2, "Aimee");
@@ -86,7 +86,7 @@ fn grades_for_several_students_are_sorted() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn grades_when_several_students_have_the_same_grade() {
     let mut s = School::new();
     s.add(2, "Aimee");

@@ -15,7 +15,7 @@ mod append {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn list_to_empty_list() {
         let list1 = vec![0i32; 0].into_iter();
         let list2 = vec![1, 2, 3, 4].into_iter();
@@ -27,7 +27,7 @@ mod append {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list_to_list() {
         let list1 = vec![1, 2, 3, 4].into_iter();
         let list2 = vec![0i32; 0].into_iter();
@@ -39,7 +39,7 @@ mod append {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn non_empty_lists() {
         let list1 = vec![1, 2].into_iter();
         let list2 = vec![2, 3, 4, 5].into_iter();
@@ -56,7 +56,7 @@ mod concat {
     use super::*;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list() {
         let lists = vec![vec![0i32; 0]; 0].into_iter().map(Vec::into_iter);
         let output = concat(lists);
@@ -67,7 +67,7 @@ mod concat {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn list_of_lists() {
         let lists = vec![vec![1, 2], vec![3], vec![], vec![4, 5, 6]]
             .into_iter()
@@ -80,7 +80,7 @@ mod concat {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn list_of_nested_lists() {
         let lists = vec![
             vec![vec![1], vec![2]],
@@ -102,7 +102,7 @@ mod filter {
     use super::*;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list() {
         let list = vec![0i32; 0].into_iter();
         let output = filter(list, |x| x % 2 == 1);
@@ -113,7 +113,7 @@ mod filter {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn non_empty_list() {
         let list = vec![1, 2, 3, 5].into_iter();
         let output = filter(list, |x| x % 2 == 1);
@@ -128,7 +128,7 @@ mod length {
     use super::*;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list() {
         let list = vec![0i32; 0].into_iter();
         let output = length(list);
@@ -139,7 +139,7 @@ mod length {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn non_empty_list() {
         let list = vec![1, 2, 3, 4].into_iter();
         let output = length(list);
@@ -154,7 +154,7 @@ mod map {
     use super::*;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list() {
         let list = vec![0i32; 0].into_iter();
         let output = map(list, |x| x + 1);
@@ -165,7 +165,7 @@ mod map {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn non_empty_list() {
         let list = vec![1, 3, 5, 7].into_iter();
         let output = map(list, |x| x + 1);
@@ -180,7 +180,7 @@ mod foldl {
     use super::*;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list() {
         let list = vec![0.0f64; 0].into_iter();
         let initial = 2.0;
@@ -192,7 +192,7 @@ mod foldl {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn direction_independent_function_applied_to_non_empty_list() {
         let list = vec![1.0, 2.0, 3.0, 4.0].into_iter();
         let initial = 5.0;
@@ -204,7 +204,7 @@ mod foldl {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn direction_dependent_function_applied_to_non_empty_list() {
         let list = vec![1.0, 2.0, 3.0, 4.0].into_iter();
         let initial = 24.0;
@@ -220,7 +220,7 @@ mod foldr {
     use super::*;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list() {
         let list = vec![0.0f64; 0].into_iter();
         let initial = 2.0;
@@ -232,7 +232,7 @@ mod foldr {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn direction_independent_function_applied_to_non_empty_list() {
         let list = vec![1.0, 2.0, 3.0, 4.0].into_iter();
         let initial = 5.0;
@@ -244,7 +244,7 @@ mod foldr {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn direction_dependent_function_applied_to_non_empty_list() {
         let list = vec![1.0, 2.0, 3.0, 4.0].into_iter();
         let initial = 24.0;
@@ -260,7 +260,7 @@ mod reverse {
     use super::*;
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn empty_list() {
         let list = vec![0i32; 0].into_iter();
         let output = reverse(list);
@@ -271,7 +271,7 @@ mod reverse {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn non_empty_list() {
         let list = vec![1, 3, 5, 7].into_iter();
         let output = reverse(list);
@@ -282,7 +282,7 @@ mod reverse {
     }
 
     #[test]
-    #[ignore]
+    //#[ignore]
     fn list_of_lists_is_not_flattened() {
         let list = vec![vec![1, 2], vec![3], vec![], vec![4, 5, 6]]
             .into_iter()

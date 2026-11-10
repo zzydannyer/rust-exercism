@@ -18,10 +18,10 @@ There are additional optional tests defined which help ensure that all valid inp
 许多实现并不适用于整个输入域。
 还定义了其他可选测试，有助于确保所有有效输入产生有效结果。
 
-To run the bonus tests, remove the `#[ignore]` flag and execute the tests with
+To run the bonus tests, remove the `//#[ignore]` flag and execute the tests with
 the `big-primes` feature, like this:
 
-要运行奖励测试，请删除 `#[ignore]` 标志并使用以下命令执行测试
+要运行奖励测试，请删除 `//#[ignore]` 标志并使用以下命令执行测试
 `big-primes` 功能，如下所示：
 
 ```bash
