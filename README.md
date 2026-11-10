@@ -9,14 +9,14 @@
 推荐使用顺序练习工具（按官方 practice 题目、难度从低到高）：
 
 ```sh
-cargo ex start      # 从第一道未通过的题开始，展示说明/教程/提示并跑测试
-cargo ex watch      # 监听当前题源码变化，保存后自动重测；通过后进入下一题
-cargo ex concept    # 单独练习 concept 题（同样展示教程和提示）
-cargo ex list       # 列出题目顺序与难度
-cargo ex show       # 只展示当前题的说明文档
+cargo ex start      # 定位当前题：进度 + 源码/说明路径 + 精简测试结果，并自动打开源码
+cargo ex concept    # 与 start 相同，但只练 concept 题
+cargo ex list       # 列出全部题目，标注已完成/未完成与汇总进度
 ```
 
-流程：修改当前题的 `src/lib.rs` → 测试通过 → 自动进入下一题。进度会显示 `已完成/总数`。
+自动打开源码时使用 Zed；也可用 `EX_EDITOR` 指定其他编辑器。
+
+流程：修改当前题的 `src/lib.rs` → 测试通过 → 自动进入下一题。进度会显示 `已完成/总数`。完成状态保存在 `exercises/.ex-progress.json`。
 
 也可以手动测单题：
 

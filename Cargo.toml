@@ -1,4 +1,4 @@
 [workspace]
-members = ["exercises/practice/*", "exercises/concept/*", "tools/rustlings"]
+members = ["exercises/practice/*", "exercises/concept/*", "tools/exercism"]
 default-members = ["exercises/practice/hello-world"]
 resolver = "3"
